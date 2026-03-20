@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affiliate Intelligence Portal | Asset & Family Protection System</title>
+    <style>
+        :root {
+            --bg-dark: #09090b;
+            --bg-card: #18181b;
+            --bg-card-hover: #27272a;
+            --text-main: #e4e4e7;
+            --text-muted: #a1a1aa;
+            --accent-red: #ef4444;
+            --accent-green: #10b981;
+            --accent-blue: #3b82f6;
+            --accent-gold: #fbbf24;
+            --border-color: #3f3f46;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(180deg, #18181b 0%, #09090b 100%);
+            padding: 80px 0 60px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h1, h2, h3, h4 {
+            color: #ffffff;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        h1 { font-size: 3rem; margin-bottom: 20px; letter-spacing: -1px; }
+        h2 { font-size: 2rem; margin-top: 60px; margin-bottom: 30px; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; }
+        h3 { font-size: 1.5rem; margin-top: 40px; margin-bottom: 20px; color: var(--accent-gold); }
+
+        p { margin-bottom: 20px; }
+        
+        .highlight-red { color: var(--accent-red); font-weight: bold; }
+        .highlight-green { color: var(--accent-green); font-weight: bold; }
+
+        /* Special Section Above Fold */
+        .special-offer {
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid var(--accent-blue);
+            border-left: 4px solid var(--accent-blue);
+            padding: 30px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+
+        .special-offer h3 { margin-top: 0; color: var(--accent-blue); }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-blue);
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            text-align: center;
+            transition: background 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn:hover { background-color: #2563eb; }
+        .btn-outline { background-color: transparent; border: 1px solid var(--text-muted); color: var(--text-main); }
+        .btn-outline:hover { background-color: rgba(255,255,255,0.05); }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            background-color: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th { background-color: rgba(255,255,255,0.05); color: var(--accent-gold); }
+        tr:last-child td { border-bottom: none; }
+
+        /* Grid Cards */
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        .card h4 { margin-bottom: 15px; color: var(--accent-blue); }
+
+        ul { margin-bottom: 20px; padding-left: 20px; }
+        li { margin-bottom: 10px; }
+
+        /* Code/Swipe blocks */
+        .swipe-block {
+            background: #000;
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 6px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            margin-bottom: 20px;
+            color: #a1a1aa;
+        }
+
+        .resource-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            background: rgba(239, 68, 68, 0.2);
+            color: var(--accent-red);
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2, .grid-3 { grid-template-columns: 1fr; }
+            h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="badge">CONFIDENTIAL JV INTELLIGENCE</div>
+        <h1>Family & Asset Protection System for Undocumented Immigrants</h1>
+        <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 800px;">
+            If you've been in Affiliate marketing long enough, you know this fact: Offers that solve urgent, desperate, life-threatening problems don't just convert—they <strong>DOMINATE</strong>.
+        </p>
+
+        <div class="special-offer">
+            <h3>ATTENTION: High-Volume Affiliates</h3>
+            <p>If you can see the absolute explosive potential in this offer and you're serious about promoting this "at scale," I am willing to offer you <strong>75%+ COMMISSION per Sale</strong>.</p>
+            <p>Combined with: Less fees, more withdrawal options (local bank transfer/crypto/paypal), and a surgically optimized, high-converting checkout page.</p>
+            <p><strong>Connect to negotiate your scale rate:</strong><br>
+            Email: kousaralom.6505@gmail.com | mariabarrubia@gmail.com</p>
+            <br>
+            <a href="https://whop.com/pro-systm/affiliates" target="_blank" class="btn">Access the Whop Opt-In (Serious Affiliates Only)</a>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <h2>1. The Offer Architecture & Economics</h2>
+    <p>This is NOT a sketchy 10-page PDF. This is a multi-format, premium protection ecosystem valued at $599, landing in a frictionless $47 sweet spot.</p>
+    
+    <div class="grid-2">
+        <div class="card">
+            <h4>The Product Ecosystem</h4>
+            <ul>
+                <li><strong>The eBook:</strong> "Undocumented but Unbroken" by Maria. Published on Amazon, Apple Books, and IngramSpark. Instant authority.</li>
+                <li><strong>Exclusive Podcast:</strong> Real stories, practical steps, deep analysis of the 2026 U.S. immigration crisis.</li>
+                <li><strong>Member-Led Community:</strong> Real-time support, threat verification, and resource sharing.</li>
+                <li><strong>Resource Website & Video Overview:</strong> Tactical guides, POA templates, and legal continuity tools.</li>
+                <li><strong>Free Bonus Resources:</strong> Maximizing the perceived value.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h4>The Affiliate Economics</h4>
+            <ul>
+                <li><strong>Payout:</strong> <span class="highlight-green">70% Default Commission</span> (Scale partners negotiate 75%+).</li>
+                <li><strong>Pricing Psychology:</strong> Looks like a steal at $47. Removes all buying resistance for a desperate audience.</li>
+                <li><strong>Trust Amplifiers:</strong> Amazon publishing credibility crushes the "is this a scam?" objection (crucial for this paranoid niche).</li>
+                <li><strong>Sales Page:</strong> Battle-tested copy designed to convert cold traffic into buyers instantly.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>2. Customer Intelligence Dossier (The 2026 Reality)</h2>
+    <p>You cannot market to this demographic with generic copy. They are terrified, paranoid about "Notario" scams, and facing the collapse of their lives. Understand these two distinct avatars to print money.</p>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Profile</th>
+                <th>The Liquidators (Asset-Heavy)</th>
+                <th>The Protectors (Mixed-Status Parents)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Demographics</strong></td>
+                <td>3.2 - 4.8 million individuals. 28% homeownership. Business owners (construction, landscaping). 15+ years tenure.</td>
+                <td>4.7 million households. 5.5 million U.S.-born citizen children at risk of CPS intervention if parents are detained.</td>
+            </tr>
+            <tr>
+                <td><strong>Core Fear</strong></td>
+                <td>Losing generational wealth, foreclosures, businesses collapsing overnight if detained. Civil asset forfeiture.</td>
+                <td>"Primal Panic". Family separation. Their citizen children ending up in state foster care.</td>
+            </tr>
+            <tr>
+                <td><strong>Urgency Trigger</strong></td>
+                <td>Expedited Removal expansion. 24-48 hour deportations without seeing a judge.</td>
+                <td>"Truancy Cascades" (pulling kids from school) & rescission of "Sensitive Locations" (raids at schools/churches).</td>
+            </tr>
+            <tr>
+                <td><strong>What They Buy</strong></td>
+                <td>Clarity on Revocable Living Trusts, ITIN business protection, Real Estate Powers of Attorney.</td>
+                <td>Caregiver's Authorization Affidavits (CAA), Guardianship (GC-211) forms, Emergency "Go-Bag" blueprints.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>3. Hook & Headline Library (Copy & Paste)</h2>
+    <p>These hooks are engineered using behavioral psychology and real enforcement data to trigger immediate attention.</p>
+    
+    <div class="grid-3">
+        <div class="card">
+            <h4>Fear & Urgency</h4>
+            <ul>
+                <li>ICE isn't stopping at the border anymore. Here is how to protect your home.</li>
+                <li>What happens to your U.S. citizen child if you don't come home tonight?</li>
+                <li>The 2026 Expedited Removal trap: Why silence can get you deported in 48 hours.</li>
+                <li>Schools and churches are no longer safe zones. Are your kids protected?</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h4>Authority & Anti-Scam</h4>
+            <ul>
+                <li>Stop paying 'Notarios' thousands for fake promises. Get the Amazon-published survival blueprint.</li>
+                <li>The legal loophole that protects your undocumented-owned LLC from seizure.</li>
+                <li>Written by an immigrant who survived the system, backed by 2026 legal realities.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h4>Curiosity & Solution</h4>
+            <ul>
+                <li>The 3 documents you MUST have in your car to avoid immediate deportation.</li>
+                <li>How 'The Liquidators' are protecting their U.S. real estate without a Green Card.</li>
+                <li>The "Go-Bag" Checklist: 5 things mixed-status families need by tonight.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>4. Email Swipe Files</h2>
+    <p>Load these into your autoresponder. These are designed to spike open rates and drive raw, emotional clicks.</p>
+    
+    <div class="swipe-block">
+SUBJECT: They are targeting schools now. (Read immediately)
+
+If you have U.S. citizen children, you need to read every word of this email.
+
+As of early 2026, the "Sensitive Locations" policy has been quietly rescinded. That means schools, churches, and hospitals are no longer safe zones. 
+
+If you don't make it to the school pickup line today, what happens to your kids?
+Without the right paperwork, they don't go to your sister. They don't go to your neighbor. 
+
+They go into the state foster care system. 
+
+You cannot rely on verbal agreements. You need a legally binding Caregiver's Authorization Affidavit (CAA) or a formal Guardianship nomination—completed correctly.
+
+Maria, an immigrant who successfully navigated this brutal system, just published the ultimate survival blueprint on Amazon. But you don't have to wait for the physical book.
+
+You can access the entire Family Protection System, the legal breakdowns, the community, and the exact steps to protect your children digitally, right now.
+
+[LINK] Secure your family's future before you leave the house tomorrow.
+
+Do not wait until it's too late.
+[Signoff]
+    </div>
+
+    <div class="swipe-block">
+SUBJECT: Your ITIN mortgage is at risk (The 48-Hour Trap)
+
+You built your business without papers. You bought your home with an ITIN. You pay your taxes. 
+
+But if you are caught in an enforcement sweep under the new 2026 rules, your assets can be seized, or lost to foreclosure in weeks. 
+
+The "Asset-Heavy" undocumented population is panicking, selling houses for 30% below market value out of fear. You don't have to do a "fire sale."
+
+You need to set up a financial firewall. 
+- Real Estate Powers of Attorney
+- ITIN LLC transition clauses
+- The 2-year proof of residency file
+
+The complete framework is inside the newly released "Undocumented but Unbroken" system. It's a \$599 legal continuity ecosystem available for less than the cost of a tank of gas.
+
+[LINK] Lock down your assets and keep your generational wealth in your family.
+    </div>
+
+    <h2>5. Landing Page & Funnel Blueprint</h2>
+    <p>If you are building your own bridge pages, use this exact conversion architecture:</p>
+    <ul>
+        <li><strong>Headline:</strong> Agitate the specific pain (e.g., "Don't Let the State Take Your Kids or Your Home.").</li>
+        <li><strong>Lead (The Reality Check):</strong> Cite the 2026 OBBBA laws. Mention the 1.7 million court backlog and the 48-hour expedited removals. Emphasize that the old rules are dead.</li>
+        <li><strong>The Enemy:</strong> Position "Notario" scammers and the complex, unforgiving legal system as the enemy.</li>
+        <li><strong>The Solution:</strong> Introduce the System. Emphasize the Amazon publishing status instantly for trust.</li>
+        <li><strong>Value Stack:</strong> Book + Podcast + Community + Legal Tool Overviews = $599 value.</li>
+        <li><strong>The Offer:</strong> Just $47. (Frame it as "Less than a consultation fee with a fake lawyer").</li>
+        <li><strong>Risk Reversal:</strong> Money-back guarantees. "We want you safe, not stressed."</li>
+    </ul>
+
+    <h2>6. UGC / Short Form Video Scripts (TikTok, Reels, Shorts)</h2>
+    <p>Shoot these selfie-style. Authentic, slightly urgent tone. Use Spanish or English depending on your targeting.</p>
+    
+    <div class="swipe-block">
+[HOOK]: If you are undocumented in the US right now and you own a home, a business, or have US-born kids... stop scrolling. 
+
+[BODY]: The laws just changed in 2026. Expedited removal means they don't even have to let you see a judge anymore. You can be gone in 48 hours. 
+If that happens, who legally has the right to pick your kids up from school? Who pays your ITIN mortgage? 
+Do not trust TikTok rumors. Do not pay thousands to sketchy 'notarios'. 
+
+[CTA]: An immigrant who actually beat the system just published a complete survival guide on Amazon. It comes with a full resource website and a private community. Link in my bio. Protect your family tonight.
+    </div>
+
+    <h2>7. Platform Playbooks (Traffic Generation)</h2>
+    <div class="grid-3">
+        <div class="card">
+            <h4>Meta Ads (FB/IG)</h4>
+            <p><strong>Targeting:</strong> Spanish-dominant users in the US. Geo-target "High-Threat" zones (Florida, Texas, Georgia) and "Contested" zones (Chicago, NY, CA). Interest targeting: Immigration advocacy groups, remittance services (Xoom, Remitly), Spanish-language media.</p>
+            <p><strong>Creative:</strong> UGC videos, infographic carousels ("3 Documents to carry in your car").</p>
+        </div>
+        <div class="card">
+            <h4>Google Search Intent</h4>
+            <p><strong>Keywords:</strong> "power of attorney child undocumented", "what happens to my house if deported", "caregiver authorization affidavit", "notario fraud checking", "how to protect assets from ICE".</p>
+            <p><strong>Strategy:</strong> Bid on high-panic, long-tail problem queries. Drive to a bridge page offering the Flipbook preview as a lead magnet.</p>
+        </div>
+        <div class="card">
+            <h4>TikTok Organic</h4>
+            <p><strong>Strategy:</strong> "Dark Social" style warnings. Act as an informant sharing verified news. "Did you know ICE rescinded sensitive locations?" Answer questions in comments. Drive traffic to Linktree.</p>
+        </div>
+    </div>
+
+    <h2>8. Objection Handling & FAQ Bank</h2>
+    <ul>
+        <li><strong>"Is this a scam? I've been burned by Notarios before."</strong><br>
+        <em>Response:</em> "Exactly why this exists. This isn't legal representation—it's a published book on Amazon and an educational system. We don't promise fake green cards; we give you the exact steps to protect what you already own."</li>
+        <li><strong>"I don't have $47 right now."</strong><br>
+        <em>Response:</em> "Not having a Power of Attorney will cost your family your entire house, or put your kids in state care. $47 is the cheapest insurance policy you will ever buy."</li>
+        <li><strong>"Can't I just find this on Google?"</strong><br>
+        <em>Response:</em> "You can find rumors on Google and WhatsApp that will get you deported. This system is verified, up-to-date for 2026, and puts everything in one secure portal."</li>
+    </ul>
+
+    <h2>9. Affiliate Resource Links & Assets</h2>
+    <p>Use these assets to build your funnels. The book preview is your ultimate lead magnet to capture emails before pushing to the sales page.</p>
+    
+    <div class="resource-links">
+        <a href="https://simplebooklet.com/undocpreviewpdf" target="_blank" class="btn btn-outline">View Flipbook Preview</a>
+        <a href="https://drive.google.com/uc?export=download&id=1APotajiWbhsfpvwWzsMRfi9qX4XN1bJB" target="_blank" class="btn btn-outline">Download PDF Lead Magnet</a>
+    </div>
+
+    <h3 style="margin-top: 40px;">Raw Audience Intelligence Data (Classified Files)</h3>
+    <p>Read these to understand exactly how the target market thinks, fears, and spends.</p>
+    <div class="resource-links">
+        <a href="https://drive.google.com/uc?export=download&id=1eD96n_n-opv1m-6_ASWoZZ5DQANNM45t" target="_blank" class="btn btn-outline">Data File 1</a>
+        <a href="https://drive.google.com/uc?export=download&id=1KAp6rcIIYnhU8B33avWA3VafBl7dNtzC" target="_blank" class="btn btn-outline">Data File 2</a>
+        <a href="https://drive.google.com/uc?export=download&id=1BA8p63bWOzbvykC9k7CpTJI-XLkTZZxQ" target="_blank" class="btn btn-outline">Data File 3</a>
+        <a href="https://drive.google.com/uc?export=download&id=1oOy7RIl0FwXKcoVo-g2cDcQg_2IJCl1N" target="_blank" class="btn btn-outline">Data File 4</a>
+        <a href="https://drive.google.com/uc?export=download&id=1sZUe4kODovz5JBQNOYgrarfCsrs_A4aT" target="_blank" class="btn btn-outline">Data File 5</a>
+        <a href="https://drive.google.com/uc?export=download&id=1zJfKuse1C3CrW9fxtFnI2h0KJ4_PcaY0" target="_blank" class="btn btn-outline">Data File 6</a>
+    </div>
+
+</div>
+
+<footer style="margin-top: 80px; padding: 40px 0; border-top: 1px solid var(--border-color); text-align: center; color: var(--text-muted);">
+    <div class="container">
+        <p>CONFIDENTIAL AFFILIATE RESOURCE PORTAL. Execute with precision.</p>
+    </div>
+</footer>
+
+</body>
+</html>
