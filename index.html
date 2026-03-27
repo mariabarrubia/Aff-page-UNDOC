@@ -1,515 +1,1452 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Affiliate Intelligence Portal | Asset & Family Protection System</title>
-    <!-- Preconnect to Google Fonts for faster load & modern typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>75% Commissions. Exclusive Whop Access. 2026’s Most Explosive Affiliate Offer.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --bg:#06070b;
+      --bg-2:#0b0e14;
+      --panel:#111520;
+      --panel-2:#151b28;
+      --panel-3:#0e1320;
+      --line:rgba(255,255,255,.08);
+      --line-2:rgba(96,165,250,.28);
+      --text:#eef4ff;
+      --muted:#a8b4ca;
+      --blue:#3b82f6;
+      --blue-2:#60a5fa;
+      --cyan:#22d3ee;
+      --green:#10b981;
+      --gold:#fbbf24;
+      --red:#fb7185;
+      --purple:#8b5cf6;
+      --shadow:0 24px 60px rgba(0,0,0,.45);
+      --radius:24px;
+      --radius-sm:16px;
+      --max:1280px;
+    }
 
-        body {
-            background: #0a0a0f;
-            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            color: #e9eef3;
-            line-height: 1.55;
-            scroll-behavior: smooth;
-            -webkit-font-smoothing: antialiased;
-        }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(59,130,246,.15), transparent 30%),
+        radial-gradient(circle at top left, rgba(34,211,238,.10), transparent 24%),
+        linear-gradient(180deg, #05070c 0%, #070b12 30%, #05070c 100%);
+      color:var(--text);
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
 
-        /* refined color palette */
-        :root {
-            --bg-deep: #050507;
-            --bg-surface: #111114;
-            --bg-card: #131317;
-            --bg-card-hover: #1a1a20;
-            --border-subtle: #26262e;
-            --border-glow: rgba(59, 130, 246, 0.3);
-            --text-primary: #f1f5f9;
-            --text-secondary: #b0b8c5;
-            --accent-blue: #3b82f6;
-            --accent-blue-light: #60a5fa;
-            --accent-red: #ef4444;
-            --accent-green: #10b981;
-            --accent-gold: #fbbf24;
-            --shadow-md: 0 10px 30px -12px rgba(0, 0, 0, 0.6);
-            --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.3);
-        }
+    a{color:var(--blue-2);text-decoration:none}
+    img{max-width:100%;display:block}
+    button,input,textarea{font:inherit}
 
-        .container {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 28px;
-        }
+    .container{width:min(var(--max), calc(100% - 40px));margin:auto}
+    .section{padding:88px 0}
+    .section-tight{padding:64px 0}
+    .section-title{
+      font-size:clamp(1.9rem,3.3vw,3rem);
+      line-height:1.08;
+      letter-spacing:-.03em;
+      margin-bottom:14px;
+    }
+    .section-subtitle{
+      color:var(--muted);
+      font-size:1.04rem;
+      max-width:860px;
+    }
 
-        /* smooth transitions */
-        a, button, .card, .btn {
-            transition: all 0.25s ease;
-        }
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:8px 14px;
+      background:rgba(59,130,246,.12);
+      border:1px solid rgba(96,165,250,.25);
+      color:#bfdbfe;
+      border-radius:999px;
+      font-size:.78rem;
+      font-weight:800;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      backdrop-filter:blur(8px);
+    }
 
-        /* header area with refined gradient */
-        header {
-            background: radial-gradient(ellipse at 70% 30%, rgba(20, 30, 55, 0.5), #030305);
-            border-bottom: 1px solid rgba(59, 130, 246, 0.2);
-            padding: 70px 0 50px;
-            position: relative;
-            overflow: hidden;
-        }
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.1);
+      background:rgba(255,255,255,.04);
+      color:#d7e4ff;
+      font-size:.86rem;
+      font-weight:600;
+    }
 
-        header::before {
-            content: '';
-            position: absolute;
-            top: -40%;
-            left: -20%;
-            width: 140%;
-            height: 140%;
-            background: radial-gradient(circle, rgba(59,130,246,0.08) 0%, rgba(0,0,0,0) 70%);
-            pointer-events: none;
-        }
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:999;
+      backdrop-filter:blur(12px);
+      background:rgba(6,8,12,.75);
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .topbar-inner{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+      min-height:76px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      min-width:0;
+    }
+    .brand-mark{
+      width:42px;height:42px;border-radius:14px;
+      display:grid;place-items:center;
+      background:
+        linear-gradient(135deg, rgba(59,130,246,.28), rgba(34,211,238,.18)),
+        #0f1727;
+      border:1px solid rgba(96,165,250,.35);
+      box-shadow:0 12px 28px rgba(59,130,246,.18);
+      font-size:1.1rem;
+    }
+    .brand-text{min-width:0}
+    .brand-text strong{
+      display:block;
+      font-size:.95rem;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    .brand-text span{
+      color:var(--muted);
+      font-size:.8rem;
+    }
 
-        .badge {
-            display: inline-block;
-            background: rgba(59, 130, 246, 0.2);
-            backdrop-filter: blur(4px);
-            padding: 6px 14px;
-            border-radius: 40px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: var(--accent-blue-light);
-            border: 1px solid rgba(59, 130, 246, 0.4);
-            margin-bottom: 24px;
-        }
+    .top-actions{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
 
-        h1 {
-            font-size: 3.4rem;
-            font-weight: 800;
-            letter-spacing: -0.02em;
-            background: linear-gradient(to right, #ffffff, #b9d0ff);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            margin-bottom: 24px;
-            line-height: 1.2;
-        }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:14px 22px;
+      border-radius:999px;
+      border:none;
+      cursor:pointer;
+      font-weight:800;
+      letter-spacing:.01em;
+      transition:.25s ease;
+      text-align:center;
+      text-decoration:none;
+      white-space:nowrap;
+    }
+    .btn-primary{
+      color:white;
+      background:linear-gradient(135deg, var(--blue), var(--blue-2));
+      box-shadow:0 14px 34px rgba(59,130,246,.28);
+    }
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 18px 40px rgba(59,130,246,.38)}
+    .btn-secondary{
+      color:var(--text);
+      background:rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.11);
+    }
+    .btn-secondary:hover{transform:translateY(-2px);border-color:rgba(96,165,250,.35);background:rgba(96,165,250,.08)}
+    .btn-outline{
+      color:#dce9ff;
+      background:transparent;
+      border:1px solid rgba(96,165,250,.35);
+    }
+    .btn-outline:hover{background:rgba(96,165,250,.08);transform:translateY(-2px)}
 
-        h2 {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-top: 70px;
-            margin-bottom: 28px;
-            letter-spacing: -0.01em;
-            border-left: 4px solid var(--accent-blue);
-            padding-left: 20px;
-            color: #ffffff;
-        }
+    .hero{
+      padding:72px 0 34px;
+      position:relative;
+      overflow:hidden;
+    }
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(circle at 18% 18%, rgba(59,130,246,.14), transparent 32%),
+        radial-gradient(circle at 86% 22%, rgba(139,92,246,.12), transparent 24%);
+      pointer-events:none;
+    }
 
-        h3 {
-            font-size: 1.6rem;
-            font-weight: 700;
-            margin: 48px 0 20px 0;
-            color: var(--accent-gold);
-            letter-spacing: -0.2px;
-        }
+    .hero-grid{
+      position:relative;
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:28px;
+      align-items:start;
+    }
 
-        h4 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 18px;
-            color: var(--accent-blue-light);
-        }
+    .hero-copy h1{
+      font-size:clamp(2.5rem, 6vw, 5.2rem);
+      line-height:.96;
+      letter-spacing:-.05em;
+      margin:18px 0 18px;
+      max-width:980px;
+      background:linear-gradient(180deg,#fff 0%,#dbeafe 44%,#93c5fd 100%);
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+    }
+    .hero-copy .lead{
+      font-size:1.12rem;
+      color:#c1cce0;
+      max-width:860px;
+      margin-bottom:26px;
+    }
 
-        p {
-            margin-bottom: 1.25rem;
-            color: var(--text-secondary);
-            font-weight: 400;
-        }
+    .hero-cta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin:24px 0 20px;
+    }
 
-        .highlight-red {
-            color: var(--accent-red);
-            font-weight: 700;
-        }
+    .hero-points{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:14px;
+    }
 
-        .highlight-green {
-            color: var(--accent-green);
-            font-weight: 700;
-        }
+    .hero-card{
+      background:linear-gradient(180deg, rgba(17,21,32,.92), rgba(11,14,20,.96));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:30px;
+      padding:24px;
+      box-shadow:var(--shadow);
+      position:relative;
+      overflow:hidden;
+    }
+    .hero-card::after{
+      content:"";
+      position:absolute;
+      inset:auto -20% -55% auto;
+      width:220px;height:220px;border-radius:50%;
+      background:radial-gradient(circle, rgba(59,130,246,.22), transparent 60%);
+      pointer-events:none;
+    }
 
-        /* special offer card — premium styling */
-        .special-offer {
-            background: linear-gradient(135deg, rgba(18, 25, 45, 0.9), rgba(8, 12, 24, 0.95));
-            backdrop-filter: blur(2px);
-            border: 1px solid rgba(59, 130, 246, 0.5);
-            border-radius: 28px;
-            padding: 32px 36px;
-            margin: 42px 0 20px;
-            box-shadow: var(--shadow-md);
-            position: relative;
-            overflow: hidden;
-        }
+    .slot-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 14px;
+      border-radius:999px;
+      background:rgba(251,191,36,.12);
+      border:1px solid rgba(251,191,36,.22);
+      color:#fde68a;
+      font-size:.82rem;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.12em;
+      margin-bottom:16px;
+    }
 
-        .special-offer::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 6px;
-            height: 100%;
-            background: linear-gradient(to bottom, #3b82f6, #60a5fa);
-        }
+    .hero-card h3{
+      font-size:1.7rem;
+      letter-spacing:-.03em;
+      line-height:1.05;
+      margin-bottom:12px;
+    }
 
-        .special-offer h3 {
-            margin-top: 0;
-            color: var(--accent-blue-light);
-            font-size: 1.7rem;
-        }
+    .price-stack{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:12px;
+      margin:22px 0;
+    }
+    .mini-stat{
+      background:rgba(255,255,255,.04);
+      border:1px solid rgba(255,255,255,.06);
+      border-radius:18px;
+      padding:16px;
+    }
+    .mini-stat strong{
+      display:block;
+      font-size:1.4rem;
+      letter-spacing:-.03em;
+      margin-bottom:4px;
+    }
+    .mini-stat span{
+      color:var(--muted);
+      font-size:.92rem;
+    }
 
-        /* button styles refined */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--accent-blue);
-            color: white;
-            padding: 12px 30px;
-            border-radius: 60px;
-            font-weight: 600;
-            text-decoration: none;
-            font-size: 0.95rem;
-            letter-spacing: 0.2px;
-            box-shadow: 0 6px 14px rgba(59,130,246,0.25);
-            border: none;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
+    .stat-strip{
+      padding-top:24px;
+    }
+    .stat-grid{
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:14px;
+    }
+    .stat-card{
+      background:linear-gradient(180deg, rgba(17,21,32,.88), rgba(9,12,18,.98));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:20px;
+      padding:18px;
+      box-shadow:var(--shadow);
+    }
+    .stat-card strong{
+      display:block;
+      font-size:1.7rem;
+      line-height:1;
+      letter-spacing:-.04em;
+      margin-bottom:9px;
+      color:#fff;
+    }
+    .stat-card span{
+      font-size:.92rem;
+      color:var(--muted);
+    }
 
-        .btn:hover {
-            background: #2563eb;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(59,130,246,0.35);
-        }
+    .cards-2,.cards-3,.cards-4{
+      display:grid;
+      gap:18px;
+      margin-top:28px;
+    }
+    .cards-2{grid-template-columns:repeat(2,1fr)}
+    .cards-3{grid-template-columns:repeat(3,1fr)}
+    .cards-4{grid-template-columns:repeat(4,1fr)}
 
-        .btn-outline {
-            background: transparent;
-            border: 1px solid #3f3f4a;
-            color: var(--text-primary);
-            box-shadow: none;
-        }
+    .card{
+      background:linear-gradient(180deg, rgba(17,21,32,.9), rgba(11,14,20,.98));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:24px;
+      padding:24px;
+      box-shadow:var(--shadow);
+      transition:.3s ease;
+    }
+    .card:hover{
+      transform:translateY(-6px);
+      border-color:rgba(96,165,250,.32);
+      box-shadow:0 28px 60px rgba(0,0,0,.55);
+    }
+    .card h3,.card h4{
+      letter-spacing:-.03em;
+      margin-bottom:10px;
+    }
+    .card h3{font-size:1.35rem}
+    .card h4{font-size:1.08rem;color:#dbeafe}
+    .card p,.card li{color:var(--muted)}
+    .card ul{padding-left:18px}
+    .card li+li{margin-top:8px}
 
-        .btn-outline:hover {
-            background: rgba(59, 130, 246, 0.15);
-            border-color: var(--accent-blue);
-            color: white;
-            transform: translateY(-2px);
-        }
+    .benefit-panel{
+      position:relative;
+      overflow:hidden;
+      padding:34px;
+      border-radius:32px;
+      background:
+        linear-gradient(135deg, rgba(12,18,31,.95), rgba(9,13,24,.96)),
+        #0e1320;
+      border:1px solid rgba(96,165,250,.24);
+      box-shadow:var(--shadow);
+      margin-top:28px;
+    }
+    .benefit-panel::before{
+      content:"";
+      position:absolute;
+      inset:-20% auto auto -8%;
+      width:280px;height:280px;border-radius:50%;
+      background:radial-gradient(circle, rgba(59,130,246,.24), transparent 62%);
+      pointer-events:none;
+    }
+    .benefit-panel::after{
+      content:"";
+      position:absolute;
+      inset:auto -8% -28% auto;
+      width:240px;height:240px;border-radius:50%;
+      background:radial-gradient(circle, rgba(34,211,238,.16), transparent 60%);
+      pointer-events:none;
+    }
+    .benefit-head{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:24px;
+      position:relative;
+      z-index:1;
+    }
+    .benefit-copy h2{
+      font-size:clamp(2rem,4vw,3.2rem);
+      line-height:1;
+      letter-spacing:-.05em;
+      margin:14px 0 14px;
+    }
+    .benefit-copy p{
+      color:#c8d4e9;
+      font-size:1.03rem;
+      max-width:760px;
+    }
 
-        /* cards grid */
-        .grid-2 {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 28px;
-            margin: 28px 0 20px;
-        }
+    .badge-switch{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 16px;
+      border-radius:999px;
+      background:rgba(16,185,129,.12);
+      color:#a7f3d0;
+      border:1px solid rgba(16,185,129,.22);
+      font-weight:800;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      font-size:.8rem;
+      margin-bottom:10px;
+    }
 
-        .grid-3 {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
-            margin: 28px 0;
-        }
+    .check-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:14px;
+      margin-top:22px;
+    }
+    .check-item{
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+      padding:16px 16px 16px 14px;
+      border-radius:18px;
+      background:rgba(255,255,255,.04);
+      border:1px solid rgba(255,255,255,.07);
+    }
+    .check-icon{
+      width:34px;height:34px;min-width:34px;
+      border-radius:12px;
+      display:grid;place-items:center;
+      background:linear-gradient(135deg, rgba(16,185,129,.18), rgba(59,130,246,.18));
+      border:1px solid rgba(255,255,255,.08);
+      font-size:1rem;
+    }
+    .check-item strong{display:block;font-size:.98rem;margin-bottom:4px}
+    .check-item span{color:var(--muted);font-size:.93rem}
 
-        .card {
-            background: var(--bg-card);
-            border-radius: 24px;
-            border: 1px solid var(--border-subtle);
-            padding: 28px;
-            transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
-            box-shadow: var(--shadow-sm);
-        }
+    .benefit-side{
+      display:grid;
+      gap:14px;
+      align-content:start;
+    }
+    .side-box{
+      background:rgba(255,255,255,.04);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:20px;
+      padding:18px;
+    }
+    .side-box h4{
+      margin-bottom:10px;
+      font-size:1rem;
+      color:#e0eeff;
+    }
+    .side-box p,.side-box li{color:var(--muted);font-size:.95rem}
+    .side-box ul{padding-left:18px}
+    .side-box li+li{margin-top:7px}
 
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: rgba(59, 130, 246, 0.5);
-            background: var(--bg-card-hover);
-            box-shadow: 0 20px 28px -12px rgba(0, 0, 0, 0.6);
-        }
+    .chart-shell{
+      margin-top:28px;
+      background:linear-gradient(180deg, rgba(17,21,32,.9), rgba(11,14,20,.98));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:28px;
+      padding:26px;
+      box-shadow:var(--shadow);
+    }
 
-        .card h4 {
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
+    .bar-chart{
+      display:grid;
+      gap:18px;
+      margin-top:18px;
+    }
+    .bar-row{
+      display:grid;
+      grid-template-columns:180px 1fr 90px;
+      align-items:center;
+      gap:16px;
+    }
+    .bar-row span.label{
+      color:#d9e6fb;
+      font-weight:700;
+      font-size:.95rem;
+    }
+    .bar-track{
+      width:100%;
+      height:18px;
+      border-radius:999px;
+      background:rgba(255,255,255,.06);
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.06);
+      position:relative;
+    }
+    .bar-fill{
+      height:100%;
+      border-radius:999px;
+      background:linear-gradient(90deg, rgba(96,165,250,.75), rgba(59,130,246,1));
+      box-shadow:0 0 30px rgba(59,130,246,.25) inset;
+    }
+    .bar-fill.alt{background:linear-gradient(90deg, rgba(250,204,21,.65), rgba(245,158,11,.95))}
+    .bar-fill.low{background:linear-gradient(90deg, rgba(148,163,184,.55), rgba(100,116,139,.9))}
+    .bar-row strong{
+      text-align:right;
+      font-size:.95rem;
+    }
 
-        /* table modern */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background: var(--bg-surface);
-            border-radius: 24px;
-            overflow: hidden;
-            margin: 28px 0 32px;
-            box-shadow: var(--shadow-sm);
-        }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:22px;
+      background:linear-gradient(180deg, rgba(17,21,32,.9), rgba(11,14,20,.98));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:24px;
+      overflow:hidden;
+      box-shadow:var(--shadow);
+    }
+    th,td{
+      padding:18px 18px;
+      border-bottom:1px solid rgba(255,255,255,.06);
+      text-align:left;
+      vertical-align:top;
+    }
+    th{
+      background:rgba(255,255,255,.03);
+      color:#d9e8ff;
+      font-size:.92rem;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+    }
+    tr:last-child td{border-bottom:none}
+    td{color:#b6c2d7;font-size:.96rem}
+    td strong{color:#fff}
 
-        th, td {
-            padding: 18px 20px;
-            text-align: left;
-            border-bottom: 1px solid #202027;
-        }
+    .opportunity-flow{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:16px;
+      margin-top:28px;
+    }
+    .flow-card{
+      background:linear-gradient(180deg, rgba(17,21,32,.92), rgba(11,14,20,.98));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:24px;
+      padding:24px;
+      position:relative;
+      box-shadow:var(--shadow);
+    }
+    .flow-card:not(:last-child)::after{
+      content:"→";
+      position:absolute;
+      right:-14px;
+      top:50%;
+      transform:translateY(-50%);
+      width:28px;height:28px;
+      display:grid;place-items:center;
+      border-radius:50%;
+      background:#0f1727;
+      border:1px solid rgba(96,165,250,.24);
+      color:#93c5fd;
+      font-weight:900;
+      z-index:2;
+    }
+    .flow-icon{
+      width:48px;height:48px;border-radius:16px;
+      display:grid;place-items:center;
+      margin-bottom:14px;
+      background:linear-gradient(135deg, rgba(59,130,246,.18), rgba(34,211,238,.18));
+      border:1px solid rgba(255,255,255,.08);
+      font-size:1.2rem;
+    }
 
-        th {
-            background: #0f0f14;
-            font-weight: 700;
-            color: var(--accent-gold);
-            font-size: 0.95rem;
-            letter-spacing: 0.3px;
-        }
+    .value-stack{
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:14px;
+      margin-top:24px;
+    }
+    .stack-box{
+      padding:18px;
+      background:linear-gradient(180deg, rgba(17,21,32,.9), rgba(11,14,20,.98));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:22px;
+      box-shadow:var(--shadow);
+      text-align:center;
+    }
+    .stack-box strong{
+      display:block;
+      margin-top:12px;
+      font-size:1rem;
+    }
+    .stack-box span{
+      color:var(--muted);
+      font-size:.92rem;
+    }
+    .stack-icon{
+      width:56px;height:56px;margin:0 auto;
+      display:grid;place-items:center;
+      border-radius:18px;
+      background:linear-gradient(135deg, rgba(59,130,246,.18), rgba(139,92,246,.18));
+      border:1px solid rgba(255,255,255,.08);
+      font-size:1.35rem;
+    }
 
-        tr:last-child td {
-            border-bottom: none;
-        }
+    .audience-table-wrap,.code-shell,.gallery-shell,.resource-shell{
+      margin-top:28px;
+    }
 
-        tr:hover td {
-            background: rgba(59, 130, 246, 0.05);
-        }
+    .code-grid{
+      display:grid;
+      gap:18px;
+      margin-top:22px;
+    }
+    .code-card{
+      background:#090d15;
+      border:1px solid rgba(96,165,250,.18);
+      border-radius:24px;
+      overflow:hidden;
+      box-shadow:var(--shadow);
+    }
+    .code-head{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:16px 18px;
+      border-bottom:1px solid rgba(255,255,255,.06);
+      background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+    }
+    .code-head strong{
+      font-size:.95rem;
+      letter-spacing:.01em;
+    }
+    .copy-btn{
+      background:rgba(59,130,246,.14);
+      color:#dbeafe;
+      border:1px solid rgba(96,165,250,.24);
+      padding:10px 14px;
+      border-radius:999px;
+      font-size:.86rem;
+      font-weight:700;
+      cursor:pointer;
+      transition:.25s ease;
+    }
+    .copy-btn:hover{background:rgba(59,130,246,.22)}
+    pre{
+      margin:0;
+      padding:22px;
+      white-space:pre-wrap;
+      word-break:break-word;
+      font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;
+      font-size:.92rem;
+      line-height:1.65;
+      color:#d7e5ff;
+    }
 
-        /* swipe blocks — code style premium */
-        .swipe-block {
-            background: #0c0c12;
-            border-left: 5px solid var(--accent-blue);
-            border-radius: 20px;
-            padding: 26px 28px;
-            margin-bottom: 28px;
-            font-family: 'SF Mono', 'Menlo', 'Monaco', 'Cascadia Code', monospace;
-            font-size: 0.9rem;
-            white-space: pre-wrap;
-            color: #cdd9f4;
-            line-height: 1.55;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-            border: 1px solid #22222c;
-        }
+    .quote-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+      margin-top:26px;
+    }
+    .quote-card{
+      background:linear-gradient(180deg, rgba(17,21,32,.92), rgba(11,14,20,.98));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:24px;
+      padding:24px;
+      box-shadow:var(--shadow);
+    }
+    .quote-card p{
+      color:#dbe7fb;
+      font-size:1rem;
+    }
+    .quote-card span{
+      display:block;
+      margin-top:14px;
+      color:var(--muted);
+      font-size:.92rem;
+    }
 
-        ul, .card ul {
-            margin-bottom: 16px;
-            padding-left: 20px;
-        }
+    .gallery-shell{
+      background:linear-gradient(180deg, rgba(17,21,32,.9), rgba(11,14,20,.98));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:30px;
+      padding:26px;
+      box-shadow:var(--shadow);
+    }
+    .gallery-note{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      margin-bottom:18px;
+      padding:10px 14px;
+      border-radius:999px;
+      background:rgba(34,211,238,.10);
+      border:1px solid rgba(34,211,238,.18);
+      color:#baf7ff;
+      font-size:.9rem;
+      font-weight:700;
+    }
+    .gallery-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+    }
+    .gallery-item{
+      position:relative;
+      overflow:hidden;
+      border-radius:22px;
+      border:1px solid rgba(255,255,255,.08);
+      background:#0b0f17;
+      min-height:280px;
+    }
+    .gallery-item img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      transition:transform .45s ease;
+    }
+    .gallery-item:hover img{transform:scale(1.035)}
+    .gallery-item::after{
+      content:"Long-press to download";
+      position:absolute;
+      left:12px;right:12px;bottom:12px;
+      padding:10px 12px;
+      border-radius:14px;
+      background:rgba(6,8,12,.72);
+      border:1px solid rgba(255,255,255,.08);
+      color:#e8f2ff;
+      font-size:.84rem;
+      font-weight:700;
+      text-align:center;
+      backdrop-filter:blur(8px);
+    }
 
-        li {
-            margin-bottom: 10px;
-            color: var(--text-secondary);
-        }
+    .resource-shell{
+      background:linear-gradient(180deg, rgba(17,21,32,.92), rgba(11,14,20,.98));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:30px;
+      padding:30px;
+      box-shadow:var(--shadow);
+    }
+    .resource-intro{
+      padding:20px;
+      border-radius:22px;
+      margin:18px 0 26px;
+      background:linear-gradient(135deg, rgba(59,130,246,.10), rgba(34,211,238,.08));
+      border:1px solid rgba(96,165,250,.18);
+    }
+    .resource-intro strong{display:block;margin-bottom:8px;font-size:1.05rem}
+    .resource-intro p{color:#c7d3e8}
+    .resource-group + .resource-group{margin-top:24px}
+    .resource-group h4{
+      margin-bottom:12px;
+      color:#e5efff;
+      font-size:1.05rem;
+      letter-spacing:-.02em;
+    }
+    .resource-buttons{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+    }
 
-        .resource-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 16px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
+    .cta-final{
+      position:relative;
+      overflow:hidden;
+      padding:42px;
+      border-radius:34px;
+      border:1px solid rgba(96,165,250,.22);
+      background:
+        linear-gradient(135deg, rgba(12,18,31,.96), rgba(9,13,24,.96)),
+        #0b0f17;
+      box-shadow:var(--shadow);
+    }
+    .cta-final::before{
+      content:"";
+      position:absolute;
+      width:360px;height:360px;
+      right:-90px;top:-110px;border-radius:50%;
+      background:radial-gradient(circle, rgba(59,130,246,.22), transparent 60%);
+      pointer-events:none;
+    }
+    .cta-final-grid{
+      position:relative;
+      z-index:1;
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:24px;
+      align-items:center;
+    }
+    .cta-final h2{
+      font-size:clamp(2rem,4.3vw,3.4rem);
+      line-height:.98;
+      letter-spacing:-.05em;
+      margin:12px 0 12px;
+    }
+    .cta-list{
+      display:grid;
+      gap:10px;
+      margin-top:18px;
+    }
+    .cta-list div{
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+      color:#dbe7fb;
+    }
 
-        footer {
-            margin-top: 90px;
-            padding: 40px 0;
-            border-top: 1px solid rgba(59, 130, 246, 0.2);
-            text-align: center;
-            color: #6a6f7c;
-            font-size: 0.85rem;
-            letter-spacing: 0.3px;
-            background: #030305;
-        }
+    footer{
+      padding:28px 0 46px;
+      color:#8b98ae;
+      text-align:center;
+      font-size:.92rem;
+    }
 
-        /* responsive */
-        @media (max-width: 860px) {
-            .grid-2, .grid-3 {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-            h1 {
-                font-size: 2.4rem;
-            }
-            .container {
-                padding: 0 20px;
-            }
-            .special-offer {
-                padding: 24px 20px;
-            }
-            th, td {
-                padding: 12px 14px;
-                font-size: 0.85rem;
-            }
-        }
+    .muted{color:var(--muted)}
+    .highlight-blue{color:#93c5fd}
+    .highlight-gold{color:#fde68a}
+    .highlight-green{color:#86efac}
+    .spacer-12{height:12px}
+    .spacer-18{height:18px}
+    .spacer-24{height:24px}
 
-        @media (max-width: 640px) {
-            h2 {
-                font-size: 1.7rem;
-                padding-left: 16px;
-            }
-            .card {
-                padding: 20px;
-            }
-            .swipe-block {
-                padding: 20px;
-                font-size: 0.85rem;
-            }
-        }
+    .reveal{
+      opacity:0;
+      transform:translateY(20px);
+      animation:fadeUp .8s ease forwards;
+    }
+    .reveal.delay-1{animation-delay:.08s}
+    .reveal.delay-2{animation-delay:.16s}
+    .reveal.delay-3{animation-delay:.24s}
+    @keyframes fadeUp{
+      to{opacity:1;transform:translateY(0)}
+    }
 
-        /* subtle custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-            background: #0a0a0f;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #2c2c36;
-            border-radius: 10px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: var(--accent-blue);
-        }
+    @media (max-width: 1180px){
+      .hero-grid,.benefit-head,.cta-final-grid{grid-template-columns:1fr}
+      .stat-grid{grid-template-columns:repeat(3,1fr)}
+      .cards-4{grid-template-columns:repeat(2,1fr)}
+      .quote-grid{grid-template-columns:1fr 1fr}
+      .value-stack{grid-template-columns:repeat(3,1fr)}
+      .opportunity-flow{grid-template-columns:repeat(2,1fr)}
+      .flow-card:nth-child(2)::after{display:none}
+    }
 
-        a {
-            color: var(--accent-blue-light);
-            text-decoration: none;
-        }
-        a:hover {
-            color: white;
-        }
-    </style>
+    @media (max-width: 860px){
+      .topbar-inner{min-height:70px}
+      .top-actions .btn-secondary{display:none}
+      .stat-grid,.cards-2,.cards-3,.cards-4,.check-grid,.quote-grid,.gallery-grid,.value-stack,.opportunity-flow{grid-template-columns:1fr}
+      .bar-row{grid-template-columns:1fr;gap:8px}
+      .bar-row strong{text-align:left}
+      .price-stack{grid-template-columns:1fr 1fr}
+      .flow-card::after{display:none}
+      .gallery-item{min-height:220px}
+      th,td{padding:14px}
+      .container{width:min(var(--max), calc(100% - 26px))}
+      .benefit-panel,.cta-final,.resource-shell,.gallery-shell{padding:22px}
+    }
+
+    @media (max-width: 560px){
+      .hero{padding-top:48px}
+      .price-stack{grid-template-columns:1fr}
+      .hero-cta,.resource-buttons,.top-actions{flex-direction:column;align-items:stretch}
+      .btn{width:100%}
+      .brand-text span{display:none}
+      .section{padding:70px 0}
+      .section-tight{padding:48px 0}
+      .stat-grid{grid-template-columns:1fr 1fr}
+    }
+
+    ::-webkit-scrollbar{width:10px}
+    ::-webkit-scrollbar-thumb{background:#1e293b;border-radius:999px}
+    ::-webkit-scrollbar-track{background:#070b12}
+  </style>
 </head>
 <body>
 
-<header>
-    <div class="container">
-        <div class="badge">CONFIDENTIAL JV INTELLIGENCE</div>
-        <h1>Family & Asset Protection System for Undocumented Immigrants</h1>
-        <p style="font-size: 1.25rem; color: #b9c3d4; max-width: 800px; font-weight: 400;">
-            If you've been in Affiliate marketing long enough, you know this fact: Offers that solve urgent, desperate, life-threatening problems don't just convert—they <strong style="color:#facc15;">DOMINATE</strong>.
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <div class="brand-mark">⚡</div>
+        <div class="brand-text">
+          <strong>Affiliate Recruitment Portal</strong>
+          <span>Family &amp; Asset Protection System • Whop Exclusive</span>
+        </div>
+      </div>
+      <div class="top-actions">
+        <a href="#resources" class="btn btn-secondary">Resources</a>
+        <a href="mailto:kousaralom.6505@gmail.com" class="btn btn-secondary">Email for Scale</a>
+        <a href="https://whop.com/pro-systm/affiliates" target="_blank" rel="noopener" class="btn btn-primary">Join Now</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow reveal">Confidential JV Intelligence • 2026 Window</div>
+        <h1 class="reveal delay-1">75% Commissions.<br>Exclusive Whop Access.<br>2026’s Most Explosive Offer.</h1>
+        <p class="lead reveal delay-2">
+          This is the kind of offer serious affiliates look for and almost never find: a <strong class="highlight-gold">massive urgent market</strong>, a <strong class="highlight-blue">high-converting protection offer</strong>, a <strong class="highlight-green">$47 impulse-friendly price point</strong>, and a <strong>75% commission tier for serious partners</strong>. If you know how to move traffic, this page should make one thing obvious: sitting this out costs you money.
         </p>
 
-        <div class="special-offer">
-            <h3>ATTENTION: High-Volume Affiliates</h3>
-            <p>If you can see the absolute explosive potential in this offer and you're serious about promoting this "at scale," I am willing to offer you <strong>75%+ COMMISSION per Sale</strong>.</p>
-            <p>Combined with: Less fees, more withdrawal options (local bank transfer/crypto/paypal), and a surgically optimized, high-converting checkout page.</p>
-            <p><strong>Connect to negotiate your scale rate:</strong><br>
-            Email: kousaralom.6505@gmail.com | mariabarrubia@gmail.com</p>
-            <br>
-            <a href="https://whop.com/pro-systm/affiliates" target="_blank" rel="noopener" class="btn">Access the Whop Opt-In (Serious Affiliates Only)</a>
+        <div class="hero-cta reveal delay-3">
+          <a href="https://whop.com/pro-systm/affiliates" target="_blank" rel="noopener" class="btn btn-primary">Access the Whop Opt-In</a>
+          <a href="#why-now" class="btn btn-outline">Why Promote This Now</a>
         </div>
-    </div>
-</header>
 
-<div class="container">
-    <h2>1. The Offer Architecture & Economics</h2>
-    <p>This is NOT a sketchy 10-page PDF. This is a multi-format, premium protection ecosystem valued at $599, landing in a frictionless $47 sweet spot.</p>
-    
-    <div class="grid-2">
-        <div class="card">
-            <h4>The Product Ecosystem</h4>
-            <ul>
-                <li><strong>The eBook:</strong> "Undocumented but Unbroken" by Maria. Published on Amazon, Apple Books, and IngramSpark. Instant authority.</li>
-                <li><strong>Exclusive Podcast:</strong> Real stories, practical steps, deep analysis of the 2026 U.S. immigration crisis.</li>
-                <li><strong>Member-Led Community:</strong> Real-time support, threat verification, and resource sharing.</li>
-                <li><strong>Resource Website & Video Overview:</strong> Tactical guides, POA templates, and legal continuity tools.</li>
-                <li><strong>Free Bonus Resources:</strong> Maximizing the perceived value.</li>
-            </ul>
+        <div class="hero-points reveal delay-3">
+          <div class="pill">💸 75% per sale</div>
+          <div class="pill">🔒 Whop exclusive</div>
+          <div class="pill">⚙️ Built-for-conversion checkout</div>
+          <div class="pill">🏦 Bank / Crypto / PayPal</div>
+          <div class="pill">📉 Lowest fees, $12.50 minimum payout</div>
         </div>
-        <div class="card">
-            <h4>The Affiliate Economics</h4>
-            <ul>
-                <li><strong>Payout:</strong> <span class="highlight-green">70% Default Commission</span> (Scale partners negotiate 75%+).</li>
-                <li><strong>Pricing Psychology:</strong> Looks like a steal at $47. Removes all buying resistance for a desperate audience.</li>
-                <li><strong>Trust Amplifiers:</strong> Amazon publishing credibility crushes the "is this a scam?" objection (crucial for this paranoid niche).</li>
-                <li><strong>Sales Page:</strong> Battle-tested copy designed to convert cold traffic into buyers instantly.</li>
-            </ul>
+      </div>
+
+      <aside class="hero-card reveal delay-2">
+        <div class="slot-badge">Only 20 Elite Slots Left at 75%</div>
+        <h3>Top affiliates are locking in first-mover advantage before this niche gets crowded.</h3>
+        <p class="muted">
+          The audience is urgent, highly emotional, actively searching for solutions, and uniquely responsive to trustworthy positioning. You’re not promoting a random info product. You’re promoting a fast-decision solution in a market under pressure.
+        </p>
+
+        <div class="price-stack">
+          <div class="mini-stat">
+            <strong>$35.25</strong>
+            <span>Commission per sale at 75%</span>
+          </div>
+          <div class="mini-stat">
+            <strong>$32.90</strong>
+            <span>Default 70% payout still beats most offers</span>
+          </div>
+          <div class="mini-stat">
+            <strong>$12.50</strong>
+            <span>Low minimum withdrawal</span>
+          </div>
+          <div class="mini-stat">
+            <strong>Whop</strong>
+            <span>Exclusive distribution = low competition</span>
+          </div>
         </div>
+
+        <div class="hero-cta">
+          <a href="https://whop.com/pro-systm/affiliates" target="_blank" rel="noopener" class="btn btn-primary">Secure Your Tier</a>
+          <a href="mailto:kousaralom.6505@gmail.com, mariabarrubia@gmail.com" class="btn btn-secondary">Negotiate Scale Rate</a>
+        </div>
+      </aside>
     </div>
 
-    <h2>2. Customer Intelligence Dossier (The 2026 Reality)</h2>
-    <p>You cannot market to this demographic with generic copy. They are terrified, paranoid about "Notario" scams, and facing the collapse of their lives. Understand these two distinct avatars to print money.</p>
-    
-    <table>
-        <thead>
-            <tr>
+    <div class="container stat-strip">
+      <div class="stat-grid">
+        <div class="stat-card reveal">
+          <strong>10.9M</strong>
+          <span>Undocumented residents in the U.S.</span>
+        </div>
+        <div class="stat-card reveal delay-1">
+          <strong>4.7M</strong>
+          <span>Mixed-status households</span>
+        </div>
+        <div class="stat-card reveal delay-2">
+          <strong>5.5M</strong>
+          <span>U.S.-born children living with undocumented parents</span>
+        </div>
+        <div class="stat-card reveal delay-3">
+          <strong>28%</strong>
+          <span>Homeownership inside the market = real assets to protect</span>
+        </div>
+        <div class="stat-card reveal delay-3">
+          <strong>75%</strong>
+          <span>Detention population growth in one year</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-tight">
+      <div class="container">
+        <div class="benefit-panel" id="benefits">
+          <div class="benefit-head">
+            <div class="benefit-copy">
+              <div class="badge-switch">Why Top Affiliates Are Switching</div>
+              <h2>Serious Affiliates Don’t Need More Offers.<br>They Need Better Economics.</h2>
+              <p>
+                This is your high-impact benefits block — rebuilt to sell the opportunity from the affiliate’s point of view. Higher payout. Lower competition. Faster withdrawals. Better conversion assets. And the real secret weapon: deep audience intelligence files that remove guesswork and make media buying, angle testing, and creative strategy dramatically easier.
+              </p>
+
+              <div class="check-grid">
+                <div class="check-item">
+                  <div class="check-icon">💰</div>
+                  <div>
+                    <strong>75% commission per sale</strong>
+                    <span>And scale partners can negotiate even more.</span>
+                  </div>
+                </div>
+
+                <div class="check-item">
+                  <div class="check-icon">🏁</div>
+                  <div>
+                    <strong>Exclusive on Whop</strong>
+                    <span>Minimal competition and genuine first-mover advantage.</span>
+                  </div>
+                </div>
+
+                <div class="check-item">
+                  <div class="check-icon">🛒</div>
+                  <div>
+                    <strong>High-converting sales &amp; checkout flow</strong>
+                    <span>Battle-tested page architecture built to maximize conversions.</span>
+                  </div>
+                </div>
+
+                <div class="check-item">
+                  <div class="check-icon">🏦</div>
+                  <div>
+                    <strong>Multiple withdrawal methods</strong>
+                    <span>Local bank transfer, crypto, and PayPal.</span>
+                  </div>
+                </div>
+
+                <div class="check-item">
+                  <div class="check-icon">📉</div>
+                  <div>
+                    <strong>Lowest fees in the industry</strong>
+                    <span>Affiliates keep more of what they earn.</span>
+                  </div>
+                </div>
+
+                <div class="check-item">
+                  <div class="check-icon">⚡</div>
+                  <div>
+                    <strong>$12.50 minimum withdrawal</strong>
+                    <span>Get paid faster instead of waiting forever.</span>
+                  </div>
+                </div>
+
+                <div class="check-item">
+                  <div class="check-icon">🧠</div>
+                  <div>
+                    <strong>Detailed audience study files</strong>
+                    <span>Know what angles hit, what fears convert, and where intent is highest.</span>
+                  </div>
+                </div>
+
+                <div class="check-item">
+                  <div class="check-icon">🔐</div>
+                  <div>
+                    <strong>Trust-driven positioning</strong>
+                    <span>An offer built for a skeptical market that desperately needs credible solutions.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-cta" style="margin-top:24px">
+                <a href="https://whop.com/pro-systm/affiliates" target="_blank" rel="noopener" class="btn btn-primary">Claim Your Affiliate Spot</a>
+                <a href="#resources" class="btn btn-outline">See the Secret Weapon Files</a>
+              </div>
+            </div>
+
+            <div class="benefit-side">
+              <div class="side-box">
+                <h4>What makes this easy to promote?</h4>
+                <ul>
+                  <li>Urgent pain. Clear threat. Fast decision path.</li>
+                  <li>$47 price point that feels tiny versus the perceived risk.</li>
+                  <li>Strong trust angle in a market allergic to scams and empty promises.</li>
+                  <li>Multiple hooks for Meta, Search, TikTok, email, and bridge pages.</li>
+                </ul>
+              </div>
+              <div class="side-box">
+                <h4>What makes this feel exclusive?</h4>
+                <ul>
+                  <li>Whop distribution only.</li>
+                  <li>Negotiable scale tiers.</li>
+                  <li>Private research pack most affiliates will never get access to.</li>
+                  <li>Opportunity is still early enough to dominate angles before saturation.</li>
+                </ul>
+              </div>
+              <div class="side-box">
+                <h4>Direct scale contacts</h4>
+                <p>
+                  <a href="mailto:kousaralom.6505@gmail.com">kousaralom.6505@gmail.com</a><br>
+                  <a href="mailto:mariabarrubia@gmail.com">mariabarrubia@gmail.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart-shell">
+          <div class="eyebrow">Commission Comparison</div>
+          <h2 class="section-title" style="margin-top:14px">Why your EPC math looks better here</h2>
+          <p class="section-subtitle">
+            Typical offers in sensitive education niches often leave affiliates fighting for margin. This one gives you unusually aggressive economics up front.
+          </p>
+
+          <div class="bar-chart">
+            <div class="bar-row">
+              <span class="label">Typical low-end offers</span>
+              <div class="bar-track"><div class="bar-fill low" style="width:20%"></div></div>
+              <strong>20%</strong>
+            </div>
+            <div class="bar-row">
+              <span class="label">Typical “good” digital offers</span>
+              <div class="bar-track"><div class="bar-fill low" style="width:50%"></div></div>
+              <strong>50%</strong>
+            </div>
+            <div class="bar-row">
+              <span class="label">Default payout here</span>
+              <div class="bar-track"><div class="bar-fill" style="width:70%"></div></div>
+              <strong>70%</strong>
+            </div>
+            <div class="bar-row">
+              <span class="label">Elite partner tier</span>
+              <div class="bar-track"><div class="bar-fill alt" style="width:75%"></div></div>
+              <strong>75%</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart-shell">
+          <div class="eyebrow">Earnings Projection</div>
+          <h2 class="section-title" style="margin-top:14px">What 75% looks like in real volume</h2>
+          <p class="section-subtitle">
+            Using a $47 product price and a 75% commission tier.
+          </p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Sales / Day</th>
+                <th>Commission / Sale</th>
+                <th>Daily</th>
+                <th>Weekly</th>
+                <th>30-Day Projection</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>10</strong></td>
+                <td>$35.25</td>
+                <td>$352.50</td>
+                <td>$2,467.50</td>
+                <td>$10,575.00</td>
+              </tr>
+              <tr>
+                <td><strong>25</strong></td>
+                <td>$35.25</td>
+                <td>$881.25</td>
+                <td>$6,168.75</td>
+                <td>$26,437.50</td>
+              </tr>
+              <tr>
+                <td><strong>50</strong></td>
+                <td>$35.25</td>
+                <td>$1,762.50</td>
+                <td>$12,337.50</td>
+                <td>$52,875.00</td>
+              </tr>
+              <tr>
+                <td><strong>100</strong></td>
+                <td>$35.25</td>
+                <td>$3,525.00</td>
+                <td>$24,675.00</td>
+                <td>$105,750.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="why-now">
+      <div class="container">
+        <div class="eyebrow">Why Promote This Now • The 2026 Window</div>
+        <h2 class="section-title" style="margin-top:16px">This is the perfect storm affiliates wait years to find</h2>
+        <p class="section-subtitle">
+          Media attention is high. Enforcement anxiety is higher. The audience is actively seeking trusted, practical protection solutions. That creates a rare alignment: intense demand, low patience, high emotional urgency, and strong buying motivation.
+        </p>
+
+        <div class="opportunity-flow">
+          <div class="flow-card">
+            <div class="flow-icon">📣</div>
+            <h3>1. Policy shock</h3>
+            <p>New enforcement realities turned protection planning from “maybe later” into “I need this now.”</p>
+          </div>
+          <div class="flow-card">
+            <div class="flow-icon">😰</div>
+            <h3>2. Fear wave</h3>
+            <p>Families are worried about detention, child custody disruption, home loss, and business continuity.</p>
+          </div>
+          <div class="flow-card">
+            <div class="flow-icon">🔎</div>
+            <h3>3. Search intent spikes</h3>
+            <p>People aren’t browsing. They’re searching for forms, authority, checklists, emergency steps, and trusted guidance.</p>
+          </div>
+          <div class="flow-card">
+            <div class="flow-icon">🚀</div>
+            <h3>4. Affiliate window</h3>
+            <p>You step in with an affordable, trust-centered solution backed by strong economics and sharper positioning than the market.</p>
+          </div>
+        </div>
+
+        <div class="cards-4">
+          <div class="card">
+            <h3>Enforcement pressure</h3>
+            <p>When fear goes mainstream, conversion friction drops for offers that feel practical, immediate, and credible.</p>
+          </div>
+          <div class="card">
+            <h3>Massive underserved market</h3>
+            <p>Millions of households, real assets, real children, real urgency — and very few offers positioned well enough to win trust.</p>
+          </div>
+          <div class="card">
+            <h3>Trust is the moat</h3>
+            <p>This niche is crowded with confusion, rumors, and scam fatigue. The affiliate who looks safest usually wins.</p>
+          </div>
+          <div class="card">
+            <h3>First-mover economics</h3>
+            <p>High payout + Whop exclusivity + low competition is exactly how early affiliates compound revenue fastest.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="eyebrow">Offer Architecture &amp; Economics</div>
+        <h2 class="section-title" style="margin-top:16px">A premium protection ecosystem at a frictionless price point</h2>
+        <p class="section-subtitle">
+          This is not a flimsy PDF. It’s a multi-format system designed to feel valuable, urgent, and trustworthy from the first click.
+        </p>
+
+        <div class="value-stack">
+          <div class="stack-box">
+            <div class="stack-icon">📘</div>
+            <strong>The eBook</strong>
+            <span>“Undocumented but Unbroken” by Maria — published on Amazon, Apple Books, and IngramSpark.</span>
+          </div>
+          <div class="stack-box">
+            <div class="stack-icon">🎙️</div>
+            <strong>Exclusive podcast</strong>
+            <span>Real stories, practical steps, and 2026 crisis-context education.</span>
+          </div>
+          <div class="stack-box">
+            <div class="stack-icon">👥</div>
+            <strong>Member community</strong>
+            <span>Support, discussion, verification, and resource sharing.</span>
+          </div>
+          <div class="stack-box">
+            <div class="stack-icon">🧾</div>
+            <strong>Resource website</strong>
+            <span>Tactical guides, POA templates, continuity tools, and overviews.</span>
+          </div>
+          <div class="stack-box">
+            <div class="stack-icon">🎁</div>
+            <strong>Bonus resources</strong>
+            <span>Extra tools that increase perceived value and reduce hesitation.</span>
+          </div>
+        </div>
+
+        <div class="cards-2">
+          <div class="card">
+            <h3>The affiliate economics</h3>
+            <ul>
+              <li><strong>70% default commission</strong> with <strong>75%+ available for scale partners</strong>.</li>
+              <li><strong>$47 pricing psychology</strong> makes the offer feel affordable in a high-fear moment.</li>
+              <li><strong>Amazon-published trust angle</strong> helps crush the “Is this a scam?” objection.</li>
+              <li><strong>Battle-tested checkout environment</strong> does more of the selling for you.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>What sells this fast</h3>
+            <ul>
+              <li>Urgent, emotionally charged market.</li>
+              <li>Specific practical outcomes rather than vague inspiration.</li>
+              <li>Anti-scam positioning in a distrust-heavy niche.</li>
+              <li>Clear transformation: from chaos and fear to preparation and control.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="audience">
+      <div class="container">
+        <div class="eyebrow">Customer Intelligence Dossier</div>
+        <h2 class="section-title" style="margin-top:16px">The two avatars affiliates need to understand to print money</h2>
+        <p class="section-subtitle">
+          Generic copy will underperform here. The strongest campaigns speak directly to two very different emotional engines: wealth protection and child protection.
+        </p>
+
+        <div class="audience-table-wrap">
+          <table>
+            <thead>
+              <tr>
                 <th>Profile</th>
                 <th>The Liquidators (Asset-Heavy)</th>
                 <th>The Protectors (Mixed-Status Parents)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><strong>Demographics</strong></td>
-                <td>3.2 - 4.8 million individuals. 28% homeownership. Business owners (construction, landscaping). 15+ years tenure.</td>
-                <td>4.7 million households. 5.5 million U.S.-born citizen children at risk of CPS intervention if parents are detained.</td>
-            </tr>
-            <tr>
-                <td><strong>Core Fear</strong></td>
-                <td>Losing generational wealth, foreclosures, businesses collapsing overnight if detained. Civil asset forfeiture.</td>
-                <td>"Primal Panic". Family separation. Their citizen children ending up in state foster care.</td>
-            </tr>
-            <tr>
-                <td><strong>Urgency Trigger</strong></td>
-                <td>Expedited Removal expansion. 24-48 hour deportations without seeing a judge.</td>
-                <td>"Truancy Cascades" (pulling kids from school) & rescission of "Sensitive Locations" (raids at schools/churches).</td>
-            </tr>
-            <tr>
-                <td><strong>What They Buy</strong></td>
-                <td>Clarity on Revocable Living Trusts, ITIN business protection, Real Estate Powers of Attorney.</td>
-                <td>Caregiver's Authorization Affidavits (CAA), Guardianship (GC-211) forms, Emergency "Go-Bag" blueprints.</td>
-            </tr>
-        </tbody>
-    </table>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Who they are</strong></td>
+                <td>Long-term residents with homes, vehicles, businesses, ITIN structures, and hard-earned equity.</td>
+                <td>Parents in mixed-status households with U.S.-born children and daily fear around school pickup, custody, and separation.</td>
+              </tr>
+              <tr>
+                <td><strong>Core fear</strong></td>
+                <td>Losing generational wealth, business continuity, property control, and bank access overnight.</td>
+                <td>Citizen children entering state care or guardianship chaos if parents are detained.</td>
+              </tr>
+              <tr>
+                <td><strong>Urgency trigger</strong></td>
+                <td>Rapid detention risk, asset transfer pressure, fire-sale behavior, and power-of-attorney panic.</td>
+                <td>School safety anxiety, need for caregiver authorization, go-bag planning, and emergency documents.</td>
+              </tr>
+              <tr>
+                <td><strong>Search behavior</strong></td>
+                <td>“Sell house fast no papers,” “power of attorney for property,” “LLC ownership transfer,” “protect business without SSN.”</td>
+                <td>“Guardianship forms pdf,” “caregiver affidavit school,” “what happens to my kids if detained,” “go bag checklist.”</td>
+              </tr>
+              <tr>
+                <td><strong>What they buy</strong></td>
+                <td>POAs, trust-related education, real estate continuity, business continuity, document organization.</td>
+                <td>Guardianship guidance, caregiver authorization, family preparedness plans, emergency documentation, continuity kits.</td>
+              </tr>
+              <tr>
+                <td><strong>Objections</strong></td>
+                <td>“Can I trust this?” “Is this another scam?” “Will this expose me?”</td>
+                <td>“Is this real help?” “Will this actually protect my children?” “Can I afford to wait?”</td>
+              </tr>
+              <tr>
+                <td><strong>Best ad angles</strong></td>
+                <td>Control, continuity, asset preservation, anti-fire-sale, practical legal preparation.</td>
+                <td>Family unity, child safety, emergency readiness, anti-panic, immediate action tonight.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-    <h2>3. Hook & Headline Library (Copy & Paste)</h2>
-    <p>These hooks are engineered using behavioral psychology and real enforcement data to trigger immediate attention.</p>
-    
-    <div class="grid-3">
-        <div class="card">
-            <h4>Fear & Urgency</h4>
+        <div class="cards-3">
+          <div class="card">
+            <h3>High-impact stats you can leverage</h3>
             <ul>
-                <li>ICE isn't stopping at the border anymore. Here is how to protect your home.</li>
-                <li>What happens to your U.S. citizen child if you don't come home tonight?</li>
-                <li>The 2026 Expedited Removal trap: Why silence can get you deported in 48 hours.</li>
-                <li>Schools and churches are no longer safe zones. Are your kids protected?</li>
+              <li>4.7 million mixed-status households.</li>
+              <li>5.5 million U.S.-born children in undocumented-parent households.</li>
+              <li>28% of undocumented immigrants live in owned homes.</li>
+              <li>Median mixed-status household income can collapse by 48% if undocumented earners are removed.</li>
             </ul>
-        </div>
-        <div class="card">
-            <h4>Authority & Anti-Scam</h4>
+          </div>
+          <div class="card">
+            <h3>Emotional drivers that convert</h3>
             <ul>
-                <li>Stop paying 'Notarios' thousands for fake promises. Get the Amazon-published survival blueprint.</li>
-                <li>The legal loophole that protects your undocumented-owned LLC from seizure.</li>
-                <li>Written by an immigrant who survived the system, backed by 2026 legal realities.</li>
+              <li>“What happens to my children if I don’t make it home?”</li>
+              <li>“Who controls my home, business, and bank account tomorrow?”</li>
+              <li>“How do I protect what I built without trusting a scammer?”</li>
+              <li>“I need something real, simple, and immediate.”</li>
             </ul>
-        </div>
-        <div class="card">
-            <h4>Curiosity & Solution</h4>
+          </div>
+          <div class="card">
+            <h3>Why this niche buys fast</h3>
             <ul>
-                <li>The 3 documents you MUST have in your car to avoid immediate deportation.</li>
-                <li>How 'The Liquidators' are protecting their U.S. real estate without a Green Card.</li>
-                <li>The "Go-Bag" Checklist: 5 things mixed-status families need by tonight.</li>
+              <li>The pain is urgent, not theoretical.</li>
+              <li>The solution feels practical and specific.</li>
+              <li>The price feels low relative to the perceived risk.</li>
+              <li>Strong anti-scam framing builds instant trust.</li>
             </ul>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
 
-    <h2>4. Email Swipe Files</h2>
-    <p>Load these into your autoresponder. These are designed to spike open rates and drive raw, emotional clicks.</p>
-    
-    <div class="swipe-block">
-SUBJECT: They are targeting schools now. (Read immediately)
+    <section class="section-tight" id="hooks">
+      <div class="container">
+        <div class="eyebrow">Hook &amp; Headline Library</div>
+        <h2 class="section-title" style="margin-top:16px">Copy-and-paste angles built for clicks and fear-driven attention</h2>
+        <p class="section-subtitle">
+          Use these in ads, bridge pages, emails, short-form scripts, thumbnails, and advertorials.
+        </p>
+
+        <div class="cards-3">
+          <div class="card">
+            <h3>Fear &amp; urgency</h3>
+            <ul>
+              <li>ICE isn’t stopping at the border anymore. Here is how to protect your home.</li>
+              <li>What happens to your U.S. citizen child if you don’t come home tonight?</li>
+              <li>The 2026 expedited removal trap: why silence and hesitation can cost everything.</li>
+              <li>Schools and churches are no longer guaranteed safe zones. Are your kids protected?</li>
+              <li>If you were detained today, who controls your mortgage tomorrow?</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Authority &amp; anti-scam</h3>
+            <ul>
+              <li>Stop paying notarios for fake promises. Promote the Amazon-published survival blueprint instead.</li>
+              <li>The legal continuity system designed for families who can’t afford bad advice.</li>
+              <li>Written by an immigrant who understands the fear — and the practical steps.</li>
+              <li>Trust-driven education in a niche flooded with confusion and rumor.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Curiosity &amp; solution</h3>
+            <ul>
+              <li>The 3 documents people wish they had before a traffic stop.</li>
+              <li>How asset-heavy families are protecting homes and businesses without waiting for disaster.</li>
+              <li>The go-bag checklist mixed-status families need by tonight.</li>
+              <li>The simple preparedness move that can keep a crisis from becoming a collapse.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="swipes">
+      <div class="container">
+        <div class="eyebrow">Email Swipe Files</div>
+        <h2 class="section-title" style="margin-top:16px">Elegant, ready-to-send email copy with one-click copy buttons</h2>
+        <p class="section-subtitle">
+          These are built to trigger emotional open loops, urgency, and fast clicks.
+        </p>
+
+        <div class="code-grid">
+          <div class="code-card">
+            <div class="code-head">
+              <strong>Email Swipe #1</strong>
+              <button class="copy-btn" data-copy="swipe1">Copy email</button>
+            </div>
+            <pre id="swipe1">SUBJECT: They are targeting schools now. (Read immediately)
 
 If you have U.S. citizen children, you need to read every word of this email.
 
-As of early 2026, the "Sensitive Locations" policy has been quietly rescinded. That means schools, churches, and hospitals are no longer safe zones. 
+As of early 2026, the "Sensitive Locations" policy has been quietly rescinded. That means schools, churches, and hospitals are no longer safe zones.
 
 If you don't make it to the school pickup line today, what happens to your kids?
-Without the right paperwork, they don't go to your sister. They don't go to your neighbor. 
+Without the right paperwork, they don't go to your sister. They don't go to your neighbor.
 
-They go into the state foster care system. 
+They go into the state foster care system.
 
 You cannot rely on verbal agreements. You need a legally binding Caregiver's Authorization Affidavit (CAA) or a formal Guardianship nomination—completed correctly.
 
@@ -520,106 +1457,92 @@ You can access the entire Family Protection System, the legal breakdowns, the co
 [LINK] Secure your family's future before you leave the house tomorrow.
 
 Do not wait until it's too late.
-[Signoff]
-    </div>
+[Signoff]</pre>
+          </div>
 
-    <div class="swipe-block">
-SUBJECT: Your ITIN mortgage is at risk (The 48-Hour Trap)
+          <div class="code-card">
+            <div class="code-head">
+              <strong>Email Swipe #2</strong>
+              <button class="copy-btn" data-copy="swipe2">Copy email</button>
+            </div>
+            <pre id="swipe2">SUBJECT: Your ITIN mortgage is at risk (The 48-Hour Trap)
 
-You built your business without papers. You bought your home with an ITIN. You pay your taxes. 
+You built your business without papers. You bought your home with an ITIN. You pay your taxes.
 
-But if you are caught in an enforcement sweep under the new 2026 rules, your assets can be seized, or lost to foreclosure in weeks. 
+But if you are caught in an enforcement sweep under the new 2026 rules, your assets can be seized, or lost to foreclosure in weeks.
 
 The "Asset-Heavy" undocumented population is panicking, selling houses for 30% below market value out of fear. You don't have to do a "fire sale."
 
-You need to set up a financial firewall. 
+You need to set up a financial firewall.
 - Real Estate Powers of Attorney
 - ITIN LLC transition clauses
 - The 2-year proof of residency file
 
-The complete framework is inside the newly released "Undocumented but Unbroken" system. It's a \$599 legal continuity ecosystem available for less than the cost of a tank of gas.
+The complete framework is inside the newly released "Undocumented but Unbroken" system. It's a $599 legal continuity ecosystem available for less than the cost of a tank of gas.
 
-[LINK] Lock down your assets and keep your generational wealth in your family.
-    </div>
-
-    <h2>5. Landing Page & Funnel Blueprint</h2>
-    <p>If you are building your own bridge pages, use this exact conversion architecture:</p>
-    <ul>
-        <li><strong>Headline:</strong> Agitate the specific pain (e.g., "Don't Let the State Take Your Kids or Your Home.").</li>
-        <li><strong>Lead (The Reality Check):</strong> Cite the 2026 OBBBA laws. Mention the 1.7 million court backlog and the 48-hour expedited removals. Emphasize that the old rules are dead.</li>
-        <li><strong>The Enemy:</strong> Position "Notario" scammers and the complex, unforgiving legal system as the enemy.</li>
-        <li><strong>The Solution:</strong> Introduce the System. Emphasize the Amazon publishing status instantly for trust.</li>
-        <li><strong>Value Stack:</strong> Book + Podcast + Community + Legal Tool Overviews = $599 value.</li>
-        <li><strong>The Offer:</strong> Just $47. (Frame it as "Less than a consultation fee with a fake lawyer").</li>
-        <li><strong>Risk Reversal:</strong> Money-back guarantees. "We want you safe, not stressed."</li>
-    </ul>
-
-    <h2>6. UGC / Short Form Video Scripts (TikTok, Reels, Shorts)</h2>
-    <p>Shoot these selfie-style. Authentic, slightly urgent tone. Use Spanish or English depending on your targeting.</p>
-    
-    <div class="swipe-block">
-[HOOK]: If you are undocumented in the US right now and you own a home, a business, or have US-born kids... stop scrolling. 
-
-[BODY]: The laws just changed in 2026. Expedited removal means they don't even have to let you see a judge anymore. You can be gone in 48 hours. 
-If that happens, who legally has the right to pick your kids up from school? Who pays your ITIN mortgage? 
-Do not trust TikTok rumors. Do not pay thousands to sketchy 'notarios'. 
-
-[CTA]: An immigrant who actually beat the system just published a complete survival guide on Amazon. It comes with a full resource website and a private community. Link in my bio. Protect your family tonight.
-    </div>
-
-    <h2>7. Platform Playbooks (Traffic Generation)</h2>
-    <div class="grid-3">
-        <div class="card">
-            <h4>Meta Ads (FB/IG)</h4>
-            <p><strong>Targeting:</strong> Spanish-dominant users in the US. Geo-target "High-Threat" zones (Florida, Texas, Georgia) and "Contested" zones (Chicago, NY, CA). Interest targeting: Immigration advocacy groups, remittance services (Xoom, Remitly), Spanish-language media.</p>
-            <p><strong>Creative:</strong> UGC videos, infographic carousels ("3 Documents to carry in your car").</p>
+[LINK] Lock down your assets and keep your generational wealth in your family.</pre>
+          </div>
         </div>
-        <div class="card">
-            <h4>Google Search Intent</h4>
-            <p><strong>Keywords:</strong> "power of attorney child undocumented", "what happens to my house if deported", "caregiver authorization affidavit", "notario fraud checking", "how to protect assets from ICE".</p>
-            <p><strong>Strategy:</strong> Bid on high-panic, long-tail problem queries. Drive to a bridge page offering the Flipbook preview as a lead magnet.</p>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="eyebrow">Landing Page &amp; Funnel Blueprint</div>
+        <h2 class="section-title" style="margin-top:16px">If you’re building bridge pages, use this exact conversion architecture</h2>
+
+        <div class="cards-2">
+          <div class="card">
+            <h3>Bridge page structure</h3>
+            <ul>
+              <li><strong>Headline:</strong> Agitate the specific pain. Example: “Don’t Let the State Take Your Kids or Your Home.”</li>
+              <li><strong>Lead:</strong> Introduce the 2026 reality and explain why old assumptions are dead.</li>
+              <li><strong>The enemy:</strong> Position scams, rumors, and misinformation as the threat.</li>
+              <li><strong>The solution:</strong> Introduce the system as practical, published, and immediate.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Offer framing</h3>
+            <ul>
+              <li><strong>Value stack:</strong> Book + Podcast + Community + Legal Tool Overviews = strong perceived premium.</li>
+              <li><strong>Offer:</strong> Just $47 — less than one bad consultation or one expensive mistake.</li>
+              <li><strong>Risk reversal:</strong> Lower stress, immediate access, trust-first positioning.</li>
+              <li><strong>CTA:</strong> Direct and urgent. No soft close.</li>
+            </ul>
+          </div>
         </div>
-        <div class="card">
-            <h4>TikTok Organic</h4>
-            <p><strong>Strategy:</strong> "Dark Social" style warnings. Act as an informant sharing verified news. "Did you know ICE rescinded sensitive locations?" Answer questions in comments. Drive traffic to Linktree.</p>
-        </div>
-    </div>
+      </div>
+    </section>
 
-    <h2>8. Objection Handling & FAQ Bank</h2>
-    <ul>
-        <li><strong>"Is this a scam? I've been burned by Notarios before."</strong><br>
-        <em>Response:</em> "Exactly why this exists. This isn't legal representation—it's a published book on Amazon and an educational system. We don't promise fake green cards; we give you the exact steps to protect what you already own."</li>
-        <li><strong>"I don't have $47 right now."</strong><br>
-        <em>Response:</em> "Not having a Power of Attorney will cost your family your entire house, or put your kids in state care. $47 is the cheapest insurance policy you will ever buy."</li>
-        <li><strong>"Can't I just find this on Google?"</strong><br>
-        <em>Response:</em> "You can find rumors on Google and WhatsApp that will get you deported. This system is verified, up-to-date for 2026, and puts everything in one secure portal."</li>
-    </ul>
+    <section class="section" id="ugc">
+      <div class="container">
+        <div class="eyebrow">UGC / Short-Form Scripts</div>
+        <h2 class="section-title" style="margin-top:16px">Scripts built for TikTok, Reels, Shorts, and vertical UGC</h2>
+        <p class="section-subtitle">
+          Shoot these selfie-style. Authentic. Direct. Slightly urgent. English or Spanish depending on your traffic.
+        </p>
 
-    <h2>9. Affiliate Resource Links & Assets</h2>
-    <p>Use these assets to build your funnels. The book preview is your ultimate lead magnet to capture emails before pushing to the sales page.</p>
-    
-    <div class="resource-links">
-        <a href="https://simplebooklet.com/undocpreviewpdf" target="_blank" rel="noopener" class="btn btn-outline">View Flipbook Preview</a>
-        <a href="https://drive.google.com/uc?export=download&id=1APotajiWbhsfpvwWzsMRfi9qX4XN1bJB" target="_blank" rel="noopener" class="btn btn-outline">Download PDF Lead Magnet</a>
-    </div>
+        <div class="code-grid">
+          <div class="code-card">
+            <div class="code-head">
+              <strong>UGC Script #1</strong>
+              <button class="copy-btn" data-copy="ugc1">Copy script</button>
+            </div>
+            <pre id="ugc1">[HOOK]: If you are undocumented in the US right now and you own a home, a business, or have US-born kids... stop scrolling.
 
-    <h3 style="margin-top: 40px;">Raw Audience Intelligence Data (Classified Files)</h3>
-    <p>Read these to understand exactly how the target market thinks, fears, and spends.</p>
-    <div class="resource-links">
-        <a href="https://drive.google.com/uc?export=download&id=1eD96n_n-opv1m-6_ASWoZZ5DQANNM45t" target="_blank" rel="noopener" class="btn btn-outline">Data File 1</a>
-        <a href="https://drive.google.com/uc?export=download&id=1KAp6rcIIYnhU8B33avWA3VafBl7dNtzC" target="_blank" rel="noopener" class="btn btn-outline">Data File 2</a>
-        <a href="https://drive.google.com/uc?export=download&id=1BA8p63bWOzbvykC9k7CpTJI-XLkTZZxQ" target="_blank" rel="noopener" class="btn btn-outline">Data File 3</a>
-        <a href="https://drive.google.com/uc?export=download&id=1oOy7RIl0FwXKcoVo-g2cDcQg_2IJCl1N" target="_blank" rel="noopener" class="btn btn-outline">Data File 4</a>
-        <a href="https://drive.google.com/uc?export=download&id=1sZUe4kODovz5JBQNOYgrarfCsrs_A4aT" target="_blank" rel="noopener" class="btn btn-outline">Data File 5</a>
-        <a href="https://drive.google.com/uc?export=download&id=1zJfKuse1C3CrW9fxtFnI2h0KJ4_PcaY0" target="_blank" rel="noopener" class="btn btn-outline">Data File 6</a>
-    </div>
-</div>
+[BODY]: The laws just changed in 2026. Expedited removal means they don't even have to let you see a judge anymore. You can be gone in 48 hours.
+If that happens, who legally has the right to pick your kids up from school? Who pays your ITIN mortgage?
+Do not trust TikTok rumors. Do not pay thousands to sketchy "notarios".
 
-<footer>
-    <div class="container">
-        <p>CONFIDENTIAL AFFILIATE RESOURCE PORTAL. Execute with precision.</p>
-    </div>
-</footer>
+[CTA]: An immigrant who actually beat the system just published a complete survival guide on Amazon. It comes with a full resource website and a private community. Link in my bio. Protect your family tonight.</pre>
+          </div>
 
-</body>
-</html>
+          <div class="code-card">
+            <div class="code-head">
+              <strong>UGC Angle Variations</strong>
+              <button class="copy-btn" data-copy="ugc2">Copy angles</button>
+            </div>
+            <pre id="ugc2">ANGLE 1: "If you disappear for 48 hours, what happens to your kids?"
+ANGLE 2: "You worked 15 years for that house. Don’t lose it because you had no plan."
+ANGLE 3: "This is not legal fantasy. This is emergency preparation."
+ANGLE 4: "The people
